@@ -1,0 +1,21 @@
+inicio_programa fe43
+	usar "PIC18";
+	inicio_var
+		definir motor1 como motor;
+		definir nume como logico;
+		definir val1 como entero;
+		definir led1 como led;
+	fin_var
+	inicio_bloque
+		nume = verdadero;
+		val1 = 2.;
+		motor1.asignar(2);
+		motor2.asignar(3);
+		motor1.girar.derecha;
+		motor2.girar.derecha;
+		led1.prender;
+		mientras(val1 < 10){
+			led1.prender;
+		}
+	fin_bloque
+fin_programa
